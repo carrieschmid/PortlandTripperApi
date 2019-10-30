@@ -16,7 +16,7 @@ namespace PortlandTripper.Models
                 .HasData(
                     new TripAdvisor 
                     {
-                        PortlandMorningId = 1,
+                        TripAdvisorId = 1,
                         Name = "Extracto",
                         Hours = "6am to 6pm",
                         Address = "2921 NE Killingsworth St, Portland, OR 97211",
@@ -25,7 +25,7 @@ namespace PortlandTripper.Models
                     },
                     new TripAdvisor 
                     {
-                        PortlandMorningId = 2,
+                        TripAdvisorId = 2,
                         Name = "Southeast Grind",
                         Hours = "24 hours",
                         Address = "1223 SE Powell, Portland, OR 97202",
@@ -35,7 +35,7 @@ namespace PortlandTripper.Models
                 
                     new TripAdvisor
                     {
-                        PortlandAfternoonId = 1,
+                        TripAdvisorId = 3,
                         Name = "QuarterWorld",
                         Hours = "3pm - 1am",
                         Address = "4811 SE Hawthorne Bvld., Portland, OR 97215",
@@ -44,7 +44,7 @@ namespace PortlandTripper.Models
                     },
                     new TripAdvisor 
                     {
-                        PortlandAfternoonId = 2,
+                        TripAdvisorId = 4,
                         Name = "Japanese Garden",
                         Hours = "10am-4pm",
                         Address = "611 SW Kingston Ave., Portland OR 97205",
@@ -54,16 +54,16 @@ namespace PortlandTripper.Models
 
                     new TripAdvisor
                     {
-                        PortlandEveningId = 1,
+                        TripAdvisorId = 5,
                         Name = "Hawthorne Theater and Lounge",
                         Hours = "6:30pm-2am",
                         Address = "1507 SE 39th Ave., Portland OR 97214",
                         Cost = 18,
                         Description = "Bands and drinks."
                     },
-                    new PortlandEvening 
+                    new TripAdvisor 
                     {
-                        PortlandEveningId = 2,
+                        TripAdvisorId = 6,
                         Name = "Crystal Ballroom",
                         Hours = "6:30pm-2am",
                         Address = "1332 W Burnside, Portland OR 97209",

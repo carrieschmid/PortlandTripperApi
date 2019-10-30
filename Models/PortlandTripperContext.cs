@@ -9,14 +9,12 @@ namespace PortlandTripper.Models
         {
         }
 
-        public DbSet<PortlandMorning> PortlandMorning { get; set; }
-        public DbSet<PortlandAfternoon> PortlandAfternoon { get; set; }
-        public DbSet<PortlandEvening> PortlandEvening{ get; set; }
+        public DbSet<TripAdvisor> TripAdvisor { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
             {
-                builder.Entity<PortlandMorning>()
+                builder.Entity<TripAdvisor>()
                 .HasData(
-                    new PortlandMorning 
+                    new TripAdvisor 
                     {
                         PortlandMorningId = 1,
                         Name = "Extracto",
@@ -25,7 +23,7 @@ namespace PortlandTripper.Models
                         Cost = 8,
                         Description = "Local, award-winning coffe roaster."
                     },
-                    new PortlandMorning 
+                    new TripAdvisor 
                     {
                         PortlandMorningId = 2,
                         Name = "Southeast Grind",
@@ -33,21 +31,9 @@ namespace PortlandTripper.Models
                         Address = "1223 SE Powell, Portland, OR 97202",
                         Cost = 8,
                         Description = "24-hour cafe that also serves breakfast."
-                    }
-                );
-
-                builder.Entity<PortlandAfternoon>()
-                .HasData(
-                    new PortlandAfternoon 
-                    {
-                        PortlandAfternoonId = 1,
-                        Name = "QuarterWorld",
-                        Hours = "3pm - pm",
-                        Address = "1223 SE Powell, Portland, OR 97202",
-                        Cost = 8,
-                        Description = "24-hour cafe that also serves breakfast."
                     },
-                    new PortlandAfternoon 
+                
+                    new TripAdvisor
                     {
                         PortlandAfternoonId = 1,
                         Name = "QuarterWorld",
@@ -56,7 +42,7 @@ namespace PortlandTripper.Models
                         Cost = 15,
                         Description = "Arcade games and drinks."
                     },
-                    new PortlandAfternoon 
+                    new TripAdvisor 
                     {
                         PortlandAfternoonId = 2,
                         Name = "Japanese Garden",
@@ -64,14 +50,9 @@ namespace PortlandTripper.Models
                         Address = "611 SW Kingston Ave., Portland OR 97205",
                         Cost = 17,
                         Description = "Japanese-themed garden with special events."
-                    }
+                    },
 
-
-                );
-
-                builder.Entity<PortlandEvening>()
-                .HasData(
-                    new PortlandEvening 
+                    new TripAdvisor
                     {
                         PortlandEveningId = 1,
                         Name = "Hawthorne Theater and Lounge",

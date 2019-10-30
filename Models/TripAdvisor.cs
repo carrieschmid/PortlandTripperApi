@@ -2,9 +2,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PortlandTripper.Models
 {
-    public class PortlandEvening
+    public class TripAdvisor
     {
-        public int PortlandEveningId {get; set;}
+        public int TripAdvisorId {get; set;}
         [Required]
         [StringLength(20)]
         public string Name {get; set;}
@@ -14,6 +14,7 @@ namespace PortlandTripper.Models
         public string Hours {get; set;}
         [Required]
         [StringLength(100)]
+
         public string Address {get; set;}
         [Required]
         public int Cost {get; set;}
